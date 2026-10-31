@@ -3,9 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <title>E-Bike Research | Owen Reiss</title>
+  <meta name="description" content="Owen Reiss’s research on which road characteristics are linked to e-bike crashes in California.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Coming soon</h1>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="byline">Owen Reiss</p>
+      <h1>E-bike research</h1>
+      <p class="lede">
+        Which road characteristics, like speed limit and number of lanes, are
+        most closely tied to e-bike crashes in California? Below you’ll find
+        the full write-up, the presentation, and figures from a related
+        project on how people estimate their mileage.
+      </p>
+      <nav class="primary-links" aria-label="Main documents">
+        <a class="btn btn-solid" href="https://docs.google.com/document/d/18BtYdWcQNjIDtgWEOkJMNG1hb9KKO9K_Pz8a5B0Y-j4/edit?usp=sharing" target="_blank" rel="noopener">Read the paper</a>
+        <a class="btn btn-outline" href="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/edit?usp=sharing" target="_blank" rel="noopener">View the slides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== About ===== -->
+    <section class="wrap section" id="about">
+      <h2>About the project</h2>
+      <p>
+        E-bike crashes are rising fast. A study by the University of California,
+        San Francisco found that hospitalizations from e-bike accidents grew 99%
+        a year from 2017 to 2022, yet there is very little data on where these
+        crashes happen and why. My research asks: how do road properties
+        influence the risk of e-bike crashes in California and Sonoma County?
+      </p>
+      <p>
+        I pulled e-bike crashes from the California Crash Reporting System
+        (CCRS), which covers crashes reported to the California Highway Patrol
+        from 2016 to 2026, and matched them to road data from
+        <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>,
+        such as speed limits and lane counts. Here’s what I found:
+      </p>
+      <ul class="findings">
+        <li><strong>Faster roads see more crashes.</strong> Statewide, 1,586
+          crashes happened on roads with a speed limit of 30&nbsp;mph or more,
+          compared with 1,046 on roads of 25&nbsp;mph or less, even though
+          there are far more miles of 25&nbsp;mph road.</li>
+        <li><strong>Bike lanes help.</strong> Only about 15% of crashes
+          happened on a road with a dedicated bike lane.</li>
+        <li><strong>Rider behavior matters.</strong> When fault was recorded,
+          the e-bike rider was at fault in 82% of crashes.</li>
+      </ul>
+      <p>
+        Based on this, I recommend separating e-bike traffic from cars, by
+        encouraging riders to use slower roads and adding bike lanes where
+        that isn’t possible, and requiring traffic-safety education for
+        e-bike riders.
+      </p>
+      <p>
+        <a href="https://tinyurl.com/umapcrashes" target="_blank" rel="noopener">Explore the crashes on an interactive map</a>
+        (California, 2021–2025).
+      </p>
+    </section>
+
+    <!-- ===== Slides ===== -->
+    <section class="wrap section" id="slides">
+      <h2>Presentation</h2>
+      <div class="embed">
+        <iframe
+          src="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/preview"
+          title="E-bike research presentation"
+          loading="lazy"
+          allowfullscreen></iframe>
+      </div>
+      <p class="note">
+        If the slides don’t load,
+        <a href="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/edit?usp=sharing" target="_blank" rel="noopener">open them in Google Slides</a>.
+      </p>
+    </section>
+
+    <!-- ===== Figures ===== -->
+    <section class="wrap-wide section" id="figures">
+      <div class="wrap-inner">
+        <h2>Related project: mileage estimates</h2>
+        <p>
+          In a separate project, I looked at how accurately people estimate
+          how much they ride and drive. People who received a subsidized
+          e-bike used an app that tracked their mileage and mode of
+          transportation, then filled out a survey estimating how far they
+          had traveled. Each graph shows the gap between a person’s survey
+          estimate and the mileage the app recorded (“Value”): above 0 means
+          they overestimated, below 0 means they underestimated.
+        </p>
+        <p>
+          After getting an e-bike, people tended to overestimate how much
+          they biked and underestimate how much they drove.
+        </p>
+        <p class="note">Select a figure to enlarge it.</p>
+      </div>
+
+      <div class="figure-grid">
+        <!--
+          TO ADD A FIGURE: put the PNG in the images/ folder, then copy one
+          <figure> block below and change the src, alt, and caption.
+        -->
+        <figure class="fig">
+          <button class="fig-open" type="button">
+            <img src="images/car_after_4_days_40.png"
+                 alt="Density plot of the gap between estimated and tracked driving mileage. Most of the curve lies between about −125 and 40, mostly below 0, with two small peaks near 105 and 137."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Driving, after receiving an e-bike (40 people)</strong>
+            Survey estimate minus app-tracked driving mileage. Most of the
+            curve sits below 0: people reported driving less than they
+            actually did.
+          </figcaption>
+        </figure>
+
+        <figure class="fig">
+          <button class="fig-open" type="button">
+            <img src="images/bike_after_31.png"
+                 alt="Density plot of the gap between estimated and tracked biking mileage. Almost all of the curve lies above 0, with the tallest peaks near 0 and 15, smaller peaks spread up to 145, and one small peak near −25."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Biking, after receiving an e-bike (31 people)</strong>
+            Survey estimate minus app-tracked biking mileage. Almost all of
+            the curve sits above 0: people reported biking more than they
+            actually did.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap footer">
+    <p>Owen Reiss</p>
+    <!-- EDIT (optional): add links like GitHub or email -->
+    <p><a href="https://github.com/oreiss17" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <!-- Enlarged figure view -->
+  <dialog id="lightbox" aria-label="Enlarged figure">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

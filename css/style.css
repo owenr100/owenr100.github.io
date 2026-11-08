@@ -37,7 +37,7 @@ body {
   line-height: 1.6;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: "Spectral", Georgia, "Times New Roman", serif;
   font-weight: 700;
   line-height: 1.15;
@@ -45,6 +45,10 @@ h1, h2 {
 }
 
 h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+
+h3 { font-size: 1.4rem; margin-top: 2.5rem; }
+
+h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
 
 p { margin: 0 0 1rem; }
 
@@ -236,3 +240,29 @@ img { max-width: 100%; display: block; }
 /* ===== About findings ===== */
 .findings { padding-left: 1.25rem; margin: 0 0 1rem; }
 .findings li { margin-bottom: 0.6rem; }
+
+.steps { padding-left: 1.25rem; margin: 0 0 1rem; }
+.steps li { margin-bottom: 0.6rem; }
+
+/* Single figure inside a text column */
+.wrap-inner > .fig { margin: 1.5rem 0 2rem; }
+
+/* Street photos fill their frame instead of sitting on white */
+.fig-open.fig-photo { padding: 0; overflow: hidden; }
+.fig-photo img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+
+/* "So what?" callout under the mileage graphs */
+.so-what {
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.5rem 0.25rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  background: var(--surface);
+}
+
+.question {
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  background: var(--surface);
+}

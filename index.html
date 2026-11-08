@@ -18,78 +18,228 @@
       <h1>E-bike research</h1>
       <p class="lede">
         Which road characteristics, like speed limit and number of lanes, are
-        most closely tied to e-bike crashes in California? Below you’ll find
-        the full write-up, the presentation, and figures from a related
-        project on how people estimate their mileage.
+        most closely tied to e-bike crashes in California? This page walks
+        through the research, from the data to the recommendations.
       </p>
-      <nav class="primary-links" aria-label="Main documents">
-        <a class="btn btn-solid" href="https://docs.google.com/document/d/18BtYdWcQNjIDtgWEOkJMNG1hb9KKO9K_Pz8a5B0Y-j4/edit?usp=sharing" target="_blank" rel="noopener">Read the paper</a>
-        <a class="btn btn-outline" href="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/edit?usp=sharing" target="_blank" rel="noopener">View the slides</a>
+      <nav class="primary-links" aria-label="Main links">
+        <a class="btn btn-solid" href="https://umap.openstreetmap.fr/en/map/e-bike-crashes-2021-2025_1380454#6/38/-120" target="_blank" rel="noopener">View the map</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== About ===== -->
-    <section class="wrap section" id="about">
-      <h2>About the project</h2>
+    <!-- ===== Introduction ===== -->
+    <section class="wrap section" id="introduction">
+      <h2>Introduction</h2>
       <p>
-        E-bike crashes are rising fast. A study by the University of California,
-        San Francisco found that hospitalizations from e-bike accidents grew 99%
-        a year from 2017 to 2022, yet there is very little data on where these
-        crashes happen and why. My research asks: how do road properties
-        influence the risk of e-bike crashes in California and Sonoma County?
+        E-bikes are an attractive way for cities to promote green
+        transportation. But as e-bikes have grown in popularity over the past
+        5–10 years, injury and fatality rates have gone up. A
+        <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2821387" target="_blank" rel="noopener">study</a>
+        by the University of California, San Francisco found that from 2017 to 2022,
+        hospitalizations from e-bike accidents increased 99% a year.
       </p>
       <p>
-        I pulled e-bike crashes from the California Crash Reporting System
-        (CCRS), which covers crashes reported to the California Highway Patrol
-        from 2016 to 2026, and matched them to road data from
-        <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>,
-        such as speed limits and lane counts. Here’s what I found:
+        My research aims to identify the road characteristics most closely
+        tied to e-bike accidents, giving city planners information they can
+        use to keep roads safe for bikers and e-bikers. There is very little
+        existing data on where e-bike crashes happen and why.
       </p>
-      <ul class="findings">
-        <li><strong>Faster roads see more crashes.</strong> Statewide, 1,586
-          crashes happened on roads with a speed limit of 30&nbsp;mph or more,
-          compared with 1,046 on roads of 25&nbsp;mph or less, even though
-          there are far more miles of 25&nbsp;mph road.</li>
-        <li><strong>Bike lanes help.</strong> Only about 15% of crashes
-          happened on a road with a dedicated bike lane.</li>
-        <li><strong>Rider behavior matters.</strong> When fault was recorded,
-          the e-bike rider was at fault in 82% of crashes.</li>
-      </ul>
-      <p>
-        Based on this, I recommend separating e-bike traffic from cars, by
-        encouraging riders to use slower roads and adding bike lanes where
-        that isn’t possible, and requiring traffic-safety education for
-        e-bike riders.
-      </p>
-      <p>
-        <a href="https://tinyurl.com/umapcrashes" target="_blank" rel="noopener">Explore the crashes on an interactive map</a>
-        (California, 2021–2025).
+      <p class="question">
+        <strong>Research question:</strong> How do road properties influence
+        the risk of e-bike crashes in California and Sonoma County?
       </p>
     </section>
 
-    <!-- ===== Slides ===== -->
-    <section class="wrap section" id="slides">
-      <h2>Presentation</h2>
-      <div class="embed">
-        <iframe
-          src="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/preview"
-          title="E-bike research presentation"
-          loading="lazy"
-          allowfullscreen></iframe>
-      </div>
-      <p class="note">
-        If the slides don’t load,
-        <a href="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/edit?usp=sharing" target="_blank" rel="noopener">open them in Google Slides</a>.
-      </p>
+    <!-- ===== Methodology ===== -->
+    <section class="wrap section" id="methodology">
+      <h2>Methodology</h2>
+      <ol class="steps">
+        <li><strong>Crash data.</strong> I used the
+          <a href="https://data.ca.gov/dataset/ccrs" target="_blank" rel="noopener">California Crash Reporting System (CCRS)</a>,
+          which includes all motor vehicle crashes reported to the California
+          Highway Patrol between 2016 and 2026, and pulled out the e-bike
+          crashes.</li>
+        <li><strong>Road data.</strong> I combined the crashes with
+          <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>,
+          which has information about the roads where they happened, such as
+          speed limits and lanes.</li>
+        <li><strong>Analysis.</strong> I graphed how road characteristics
+          relate to e-bike crashes, statewide and in Sonoma County.</li>
+        <li><strong>Mapping.</strong> I plotted the crashes from 2021 to 2025 on an
+          <a href="https://umap.openstreetmap.fr/en/map/e-bike-crashes-2021-2025_1380454#6/38/-120" target="_blank" rel="noopener">interactive map</a>.</li>
+      </ol>
     </section>
 
-    <!-- ===== Figures ===== -->
-    <section class="wrap-wide section" id="figures">
+    <!-- ===== Key findings ===== -->
+    <section class="wrap-wide section" id="findings">
       <div class="wrap-inner">
-        <h2>Related project: mileage estimates</h2>
+        <h2>Key findings</h2>
+        <p>
+          E-bike crashes in the CCRS data were rare before 2020, then climbed
+          every year after.
+        </p>
+        <figure class="fig">
+          <button class="fig-open" type="button">
+            <img src="images/crashes_by_year.png"
+                 alt="Bar chart of e-bike crashes per year. Near zero from 2016 to 2019, then about 60 in 2020, 130 in 2021, 320 in 2022, 650 in 2023, 1,140 in 2024, 1,540 in 2025, and a projected 1,740 in 2026."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>E-bike crashes in California over time</strong>
+            Crashes went from a handful a year to more than 1,500 in 2025.
+            The 2026 bar is a projection for the full year.
+          </figcaption>
+        </figure>
+
+        <ul class="findings">
+          <li><strong>Faster roads see more crashes.</strong> Statewide, 1,586
+            crashes were reported on roads with a speed limit of 30&nbsp;mph or
+            more, compared with 1,046 on roads of 25&nbsp;mph or less. Since
+            there are far more miles of 25&nbsp;mph road, crashes happen
+            disproportionately on faster roads.</li>
+          <li><strong>Bike lanes help.</strong> Only about 15% of crashes
+            happened on a road with a dedicated bike lane. That’s low, since
+            many e-bikers ride more than 15% of their miles on roads with a
+            bike lane.</li>
+          <li><strong>Rider behavior matters.</strong> When fault was logged,
+            the e-bike rider was at fault in 82% of crashes.</li>
+        </ul>
+      </div>
+
+      <div class="figure-grid">
+        <figure class="fig">
+          <button class="fig-open" type="button">
+            <img src="images/crashes_by_speed_limit.png"
+                 alt="Bar chart of e-bike crashes by speed limit: about 120 under 25 mph, 780 at 25, 150 at 30, 500 at 35, 365 at 40, 435 at 45, 115 at 50, and 145 at 55."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Statewide crashes by speed limit, 2020–2026</strong>
+            25&nbsp;mph has the most crashes of any single speed limit, but
+            roads of 30&nbsp;mph and up have more crashes combined.
+          </figcaption>
+        </figure>
+
+        <figure class="fig">
+          <button class="fig-open" type="button">
+            <img src="images/crashes_by_lanes.png"
+                 alt="Bar chart of e-bike crashes by number of lanes per direction: about 780 with one lane, 435 with two, 115 with three, and 20 with four."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Statewide crashes by lanes per direction, 2020–2026</strong>
+            Most crashes were on roads with one lane each way, the most common
+            kind of road. These counts aren’t adjusted for how many miles of
+            each kind of road exist.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap-inner">
+        <h3>A sample of crash locations</h3>
+        <p class="note">Street views of places where e-bike crashes happened.</p>
+      </div>
+
+      <div class="figure-grid">
+        <figure class="fig">
+          <button class="fig-open fig-photo" type="button">
+            <img src="images/crash_site_irvine_ave.jpg"
+                 alt="Street view of Irvine Ave: two lanes in each direction split by a double yellow line, with a painted bike lane along the curb."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Irvine Ave</strong>
+            Two lanes in each direction with a painted bike lane.
+          </figcaption>
+        </figure>
+
+        <figure class="fig">
+          <button class="fig-open fig-photo" type="button">
+            <img src="images/crash_site_san_joaquin_hills_rd.jpg"
+                 alt="Street view of San Joaquin Hills Rd: a divided road with two lanes in this direction, a bike lane along the curb, and trees on both sides."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>San Joaquin Hills Rd</strong>
+            A divided road with two lanes in each direction and a bike lane.
+          </figcaption>
+        </figure>
+
+        <figure class="fig">
+          <button class="fig-open fig-photo" type="button">
+            <img src="images/crash_site_dublin_blvd.jpg"
+                 alt="Street view of Dublin Blvd approaching a signaled intersection, with several lanes and a bike lane marked with green paint where cars cross it to turn."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Dublin Blvd</strong>
+            A wide road at a signaled intersection, where turning cars cross
+            the bike lane.
+          </figcaption>
+        </figure>
+
+        <figure class="fig">
+          <button class="fig-open fig-photo" type="button">
+            <img src="images/crash_site_fiji_way.jpg"
+                 alt="Street view of Fiji Way: one lane in this direction with a bike lane, a cyclist riding in it, and a planted median."
+                 loading="lazy">
+          </button>
+          <figcaption>
+            <strong>Fiji Way</strong>
+            One lane in each direction with a bike lane.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap-inner">
+        <p class="note">Street View imagery © 2026 Google.</p>
+      </div>
+    </section>
+
+    <!-- ===== Recommendations ===== -->
+    <section class="wrap section" id="recommendations">
+      <h2>Recommendations</h2>
+      <ul class="findings">
+        <li><strong>Encourage riding on slower roads.</strong> This reduces
+          injury severity and how often e-bikes interact with cars.</li>
+        <li><strong>Add bike lanes where slower roads aren’t an
+          option.</strong> When residential roads can’t be used, such as at a
+          freeway or waterway crossing, a dedicated bike lane is a good
+          alternative.</li>
+        <li><strong>Require traffic education and risk warnings.</strong> With
+          e-bikers at fault in 82% of crashes where fault was logged, training
+          riders would likely prevent many accidents.</li>
+      </ul>
+    </section>
+
+    <!-- ===== Future directions ===== -->
+    <section class="wrap section" id="future">
+      <h2>Future directions</h2>
+      <!-- DRAFT: check against the paper -->
+      <p>This research has limits that future work could address:</p>
+      <ul class="findings">
+        <li><strong>Only reported crashes.</strong> CCRS only includes crashes
+          reported to the California Highway Patrol, so many minor e-bike
+          crashes are missing.</li>
+        <li><strong>Counts, not rates.</strong> There’s no data on how many
+          miles people ride on each kind of road, so a road type with more
+          crashes might just have more riders. Tracking real rides would make
+          it possible to compare crashes per mile.</li>
+        <li><strong>Gaps in CCRS data.</strong> Not every collision entry had a
+          log of the speed limit or number of lanes.</li>
+        <li><strong>More road features.</strong> Future work could look at
+          other characteristics, like lane width and road quality.</li>
+      </ul>
+    </section>
+
+    <!-- ===== Related research & resources ===== -->
+    <section class="wrap-wide section" id="resources">
+      <div class="wrap-inner">
+        <h2>Related research &amp; resources</h2>
+
+        <h3>Related project: mileage estimates</h3>
         <p>
           In a separate project, I looked at how accurately people estimate
           how much they ride and drive. People who received a subsidized
@@ -98,10 +248,6 @@
           had traveled. Each graph shows the gap between a person’s survey
           estimate and the mileage the app recorded (“Value”): above 0 means
           they overestimated, below 0 means they underestimated.
-        </p>
-        <p>
-          After getting an e-bike, people tended to overestimate how much
-          they biked and underestimate how much they drove.
         </p>
         <p class="note">Select a figure to enlarge it.</p>
       </div>
@@ -139,6 +285,50 @@
           </figcaption>
         </figure>
       </div>
+
+      <div class="wrap-inner">
+        <div class="so-what">
+          <h4>So what?</h4>
+          <p>
+            After getting an e-bike, people overestimated how much they biked
+            and underestimated how much they drove. Many evaluations of e-bike
+            programs, including subsidy programs, rely on surveys like this
+            one, so they may make e-bikes look like they replace more car
+            trips than they really do. Tracking trips with an app gives a more
+            accurate picture.
+          </p>
+          <p>
+            It matters for crash research too. To compare how risky different
+            roads are, we need to know how many miles people actually ride on
+            them, and self-reported mileage would get that wrong.
+          </p>
+        </div>
+
+        <h3 id="presentation">Presentation</h3>
+        <div class="embed">
+          <iframe
+            src="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/preview"
+            title="E-bike research presentation"
+            loading="lazy"
+            allowfullscreen></iframe>
+        </div>
+        <p class="note">
+          If the slides don’t load,
+          <a href="https://docs.google.com/presentation/d/17sioOaPRS_yz4tC_J4zjSKDRWwFMVrwUUGtdMxAkXfY/edit?usp=sharing" target="_blank" rel="noopener">open them in Google Slides</a>.
+        </p>
+
+        <h3>Data and tools</h3>
+        <ul class="findings">
+          <li><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2821387" target="_blank" rel="noopener">UCSF study on e-bike injuries</a>,
+            <i>JAMA Network Open</i></li>
+          <li><a href="https://umap.openstreetmap.fr/en/map/e-bike-crashes-2021-2025_1380454#6/38/-120" target="_blank" rel="noopener">Interactive map of e-bike crashes</a>
+            (California, 2021–2025)</li>
+          <li><a href="https://data.ca.gov/dataset/ccrs" target="_blank" rel="noopener">California Crash Reporting System (CCRS)</a>,
+            California Highway Patrol</li>
+          <li><a href="https://www.openstreetmap.org" target="_blank" rel="noopener">OpenStreetMap</a>
+            road data</li>
+        </ul>
+      </div>
     </section>
 
   </main>
@@ -146,7 +336,7 @@
   <footer class="wrap footer">
     <p>Owen Reiss</p>
     <!-- EDIT (optional): add links like GitHub or email -->
-    <p><a href="https://github.com/oreiss17" target="_blank" rel="noopener">GitHub</a></p>
+    <p><a href="https://github.com/owenr100" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
   <!-- Enlarged figure view -->
